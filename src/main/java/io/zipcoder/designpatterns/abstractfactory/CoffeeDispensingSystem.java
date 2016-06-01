@@ -6,7 +6,7 @@ import io.zipcoder.designpatterns.factory.CupDispenser;
 import io.zipcoder.designpatterns.factory.DrinkDispenser;
 
 
-class CoffeeDispensingSystem extends DispensingSystem{
+public class CoffeeDispensingSystem extends DispensingSystem{
 
     @Override
     public DrinkDispenser drinkDispenser(){ return new CoffeeMachine(); }

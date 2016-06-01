@@ -5,9 +5,7 @@ import io.zipcoder.designpatterns.factory.BeerGlassDispenser;
 import io.zipcoder.designpatterns.factory.CupDispenser;
 import io.zipcoder.designpatterns.factory.DrinkDispenser;
 
-/**
- * Created by davidginzberg on 6/1/16.
- */
+
 public class BeerDispensingSystem  extends DispensingSystem{
 
     @Override
