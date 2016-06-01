@@ -24,6 +24,8 @@ Follow the Abstract Factory pattern to complete the hierarchy for the `Dispensin
 
 The various dispensers we created in the previous lab don't have any internal state, so it may not make sense to create new ones every time we request a dispenser. Turn the various subclasses of `DrinkDispenser` and `CupDispenser` into singletons so that only one instance of each is created when requesting them from the various Dispensing Systems.
 
+- Here is [a brief article discussing Java singletons in greater depth](http://www.softwaregeek.net/2013/01/singleton-design-pattern-in-java.html)
+
 ### Facade
 
 When you go to a restaurant (or diner or coffee shop) you don't usually expect to have to construct your drink yourself -- you just order it, and shortly afterward the server returns with your drink. Implement the Facade pattern in the form of a class called `DrinkServer` that that handles the process of serving you a drink, and all you have to know is how to `orderCoffee()`, `orderSoda()` or `orderBeer()`
