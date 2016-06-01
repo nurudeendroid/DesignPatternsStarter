@@ -5,13 +5,13 @@ import io.zipcoder.designpatterns.factory.CoffeeMachine;
 
 public class SingletonCoffeeMachine extends CoffeeMachine {
 
-    private static SingletonCoffeeMachine instance;
+    private static SingletonCoffeeMachine theOnlyInstance;
 
     private SingletonCoffeeMachine(){}
 
-    public static SingletonCoffeeMachine getInstance(){
-        if(null == instance )
-            instance = new SingletonCoffeeMachine();
-        return instance;
+    public static SingletonCoffeeMachine getTheOnlyInstance(){
+        if(null == theOnlyInstance)
+            theOnlyInstance = new SingletonCoffeeMachine();
+        return theOnlyInstance;
     }
 }

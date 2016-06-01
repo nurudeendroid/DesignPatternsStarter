@@ -8,7 +8,7 @@ public class SingletonCoffeeDispensingSystem extends CoffeeDispensingSystem {
 
     @Override
     public SingletonCoffeeMachine drinkDispenser() {
-        return SingletonCoffeeMachine.getInstance();
+        return SingletonCoffeeMachine.getTheOnlyInstance();
     }
 
     @Override
