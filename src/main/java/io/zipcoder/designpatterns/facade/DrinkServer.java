@@ -7,16 +7,21 @@ import io.zipcoder.designpatterns.factory.BeerGlass;
 import io.zipcoder.designpatterns.factory.CoffeeCup;
 import io.zipcoder.designpatterns.factory.Cup;
 
+import java.util.Observable;
 
-public class DrinkServer {
+
+public class DrinkServer extends Observable{
 
     public CoffeeCup orderCoffee(){
         //This is potentially unsafe and a good opportunity to consider using Generics
+        setChanged();
+        notifyObservers("Coffee");
         return (CoffeeCup)serveDrink(new CoffeeDispensingSystem());
     }
 
     public BeerGlass orderBeer(){
-
+        setChanged();
+        notifyObservers("Beer");
         return (BeerGlass)serveDrink(new BeerDispensingSystem());
     }
 
